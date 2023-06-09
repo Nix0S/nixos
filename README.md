@@ -20,6 +20,8 @@ Modify the hardware-configuration.nix to add zstd compression and noatime BTRFS 
 - @
 - @home
 - @snapshots
+
+
 `"compress-force=zstd:1" "noatime" `
 
 Copy the contents of this directory to the /mnt/etc/nixos/ directory
