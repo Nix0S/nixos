@@ -4,7 +4,6 @@
   imports = [
     ./zsh.nix
   ];
-{
   home.username = "joe";
   home.homeDirectory = "/home/joe";
   home.stateVersion = "23.05";
@@ -49,6 +48,5 @@
     xclip 
     yt-dlp
   ];
-  
 }
 
