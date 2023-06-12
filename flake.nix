@@ -6,12 +6,11 @@
     home-manager = {
       url = github:nix-community/home-manager;
       inputs.nixpkgs.follows = "nixpkgs";
-      # secrets management, lock with git commit at 2023/5/15
-      agenix.url = "github:ryantm/agenix";
     };
+    agenix.url = "github:ryantm/agenix";
   };
 
-  outputs = { nixpkgs, home-manager, agenix, ... }:
+  outputs = { self, nixpkgs, home-manager, agenix, ... }:
   let
     system = "x86_64-linux";
   in
